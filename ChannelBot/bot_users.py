@@ -39,10 +39,15 @@ async def broadcast_message(client, message):
         users = []
 
     # Broadcast the message to all the users
+    broadcasted_count = 0
+    failed_count = 0
     for user in users:
         try:
-            await Client.send_message(user.user_id, replied_message)
+            await Client.send_message(user.user_id, text=replied_message.text)
+            broadcasted_count += 1
         except Exception as e:
             print(f"Failed to broadcast message to user {user.user_id}: {str(e)}")
+            failed_count += 1
 
-    await message.reply("Message broadcasted successfully.")
+    # Send the broadcast result to the user
+    await message.reply(f"Message broadcasted successfully to {broadcasted_count} users, failed to broadcast to {failed_count} users.")
