@@ -43,7 +43,7 @@ async def broadcast_message(client, message):
     failed_count = 0
     for user in users:
         try:
-            await Client.send_message(user.user_id, text=replied_message.text)
+            await Client.send_message(chat_id=user.user_id, text=replied_message.text)
             broadcasted_count += 1
         except Exception as e:
             print(f"Failed to broadcast message to user {user.user_id}: {str(e)}")
