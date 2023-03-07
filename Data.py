@@ -18,13 +18,13 @@ By @HYBRID_Bots
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/HYBRID_Bots/8")],
+        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/OFFICIALBOT_UPDATE")],
         [
             InlineKeyboardButton("How to Use ❔", callback_data="help"),
             InlineKeyboardButton("🎪 About 🎪", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/HYBRID_Bots")],
-        [InlineKeyboardButton("🎨 Support Group 🎨", url="https://t.me/HYBRID_Chat")],
+        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/OFFICIALBOT_UPDATE")],
+        [InlineKeyboardButton("🎨 Support Group 🎨", url="https://t.me/OFFICIALBOT_UPDATE")],
     ]
 
     # Help Message
