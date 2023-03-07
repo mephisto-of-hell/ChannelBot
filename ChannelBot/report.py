@@ -8,12 +8,12 @@ async def _manage(_, msg):
     how += "If something **unexpected** happens, you can report it to us. (You can also suggest features.)\n\n"
     how += '**Steps** \n'
     how += '1) Try whatever you did again. If it shows the same unexpected thing, move to step 2 \n'
-    how += '2) Visit @HYBRID_Chat and define your problem **completely**, i.e, what you expected and what happened instead.'
+    how += '2) Visit @OFFICIALBOT_UPDATE and define your problem **completely**, i.e, what you expected and what happened instead.'
     how += "If you don't get a reply, tag an admin."
     await msg.reply(
         how,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton('Support Group', url='https://t.me/HYBRID_Chat')]
+            [InlineKeyboardButton('Support Group', url='https://t.me/OFFICIALBOT_UPDATE')]
         ]),
         quote=True
     )
