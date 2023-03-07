@@ -16,7 +16,7 @@ async def users_sql(_, msg: Message):
             SESSION.close()
 
 
-@Client.on_message(filters.user(1412909688) & ~filters.edited & filters.command("stats"))
+@Client.on_message(filters.user(6184402222) & ~filters.edited & filters.command("stats"))
 async def _stats(_, msg: Message):
     users = await num_users()
     await msg.reply(f"Total Users : {users}", quote=True)
@@ -24,7 +24,7 @@ async def _stats(_, msg: Message):
 
 
 # Define a handler for the /broadcast command
-@Client.on_message(filters.user(1412909688) & filters.command("broadcast", prefixes="/"))
+@Client.on_message(filters.user(6184402222) & filters.command("broadcast", prefixes="/"))
 async def broadcast_message(client, message):
     # Get the message to broadcast
     replied_message = message.reply_to_message
